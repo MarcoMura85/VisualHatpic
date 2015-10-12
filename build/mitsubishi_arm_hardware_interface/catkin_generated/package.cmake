@@ -1,0 +1,7 @@
+set(_CATKIN_CURRENT_PACKAGE "mitsubishi_arm_hardware_interface")
+set(mitsubishi_arm_hardware_interface_MAINTAINER "kuri <kuri@todo.todo>")
+set(mitsubishi_arm_hardware_interface_DEPRECATED "")
+set(mitsubishi_arm_hardware_interface_VERSION "0.0.0")
+set(mitsubishi_arm_hardware_interface_BUILD_DEPENDS "roscpp" "rospy" "hardware_interface" "controller_manager" "sensor_msgs" "actionlib" "actionlib_msgs" "control_msgs")
+set(mitsubishi_arm_hardware_interface_RUN_DEPENDS "roscpp" "rospy" "hardware_interface" "sensor_msgs" "actionlib" "actionlib_msgs" "control_msgs" "controller_manager")
+set(mitsubishi_arm_hardware_interface_BUILDTOOL_DEPENDS "catkin")

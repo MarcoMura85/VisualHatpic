@@ -1,0 +1,7 @@
+set(_CATKIN_CURRENT_PACKAGE "mitsubishi_arm_description")
+set(mitsubishi_arm_description_MAINTAINER "rui <rui@todo.todo>")
+set(mitsubishi_arm_description_DEPRECATED "")
+set(mitsubishi_arm_description_VERSION "0.0.0")
+set(mitsubishi_arm_description_BUILD_DEPENDS )
+set(mitsubishi_arm_description_RUN_DEPENDS )
+set(mitsubishi_arm_description_BUILDTOOL_DEPENDS "catkin")

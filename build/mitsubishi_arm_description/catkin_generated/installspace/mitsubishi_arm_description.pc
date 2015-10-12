@@ -1,0 +1,8 @@
+prefix=/home/yasmeen/MarcoStuff/catkin_ws/install
+
+Name: mitsubishi_arm_description
+Description: Description of mitsubishi_arm_description
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/yasmeen/MarcoStuff/catkin_ws/install/lib 
+Requires: 

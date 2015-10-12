@@ -1,0 +1,7 @@
+set(_CATKIN_CURRENT_PACKAGE "move_group_test")
+set(move_group_test_MAINTAINER "yasmeen <yasmeen@todo.todo>")
+set(move_group_test_DEPRECATED "")
+set(move_group_test_VERSION "0.0.0")
+set(move_group_test_BUILD_DEPENDS "moveit_ros_planning_interface" "roscpp")
+set(move_group_test_RUN_DEPENDS "moveit_ros_planning_interface" "roscpp" "moveit_core")
+set(move_group_test_BUILDTOOL_DEPENDS "catkin" "moveit_core")

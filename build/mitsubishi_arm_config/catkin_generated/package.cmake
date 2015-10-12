@@ -1,0 +1,7 @@
+set(_CATKIN_CURRENT_PACKAGE "mitsubishi_arm_config")
+set(mitsubishi_arm_config_MAINTAINER "MoveIt Setup Assistant <assistant@moveit.ros.org>")
+set(mitsubishi_arm_config_DEPRECATED "")
+set(mitsubishi_arm_config_VERSION "0.2.0")
+set(mitsubishi_arm_config_BUILD_DEPENDS "mitsubishi_arm_description")
+set(mitsubishi_arm_config_RUN_DEPENDS "moveit_ros_move_group" "moveit_planners_ompl" "moveit_ros_visualization" "joint_state_publisher" "robot_state_publisher" "xacro" "mitsubishi_arm_description")
+set(mitsubishi_arm_config_BUILDTOOL_DEPENDS "catkin")

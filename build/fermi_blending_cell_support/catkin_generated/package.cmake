@@ -1,0 +1,7 @@
+set(_CATKIN_CURRENT_PACKAGE "fermi_blending_cell_support")
+set(fermi_blending_cell_support_MAINTAINER "Shaun Edwards <Edwards@todo.todo>")
+set(fermi_blending_cell_support_DEPRECATED "")
+set(fermi_blending_cell_support_VERSION "0.0.0")
+set(fermi_blending_cell_support_BUILD_DEPENDS "xacro")
+set(fermi_blending_cell_support_RUN_DEPENDS "xacro")
+set(fermi_blending_cell_support_BUILDTOOL_DEPENDS "catkin")

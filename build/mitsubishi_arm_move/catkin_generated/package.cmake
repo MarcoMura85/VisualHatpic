@@ -1,0 +1,7 @@
+set(_CATKIN_CURRENT_PACKAGE "mitsubishi_arm_move")
+set(mitsubishi_arm_move_MAINTAINER "kuri <kuri@todo.todo>")
+set(mitsubishi_arm_move_DEPRECATED "")
+set(mitsubishi_arm_move_VERSION "0.0.0")
+set(mitsubishi_arm_move_BUILD_DEPENDS "roscpp" "moveit_ros_planning" "moveit_ros_planning_interface" "moveit_ros_move_group" "moveit_ros" "moveit_msgs")
+set(mitsubishi_arm_move_RUN_DEPENDS "roscpp" "moveit_ros_planning_interface" "moveit_ros_planning" "moveit_ros_move_group" "moveit_ros" "moveit_msgs")
+set(mitsubishi_arm_move_BUILDTOOL_DEPENDS "catkin")

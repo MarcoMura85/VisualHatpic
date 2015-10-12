@@ -1,0 +1,8 @@
+prefix=/home/yasmeen/MarcoStuff/catkin_ws/devel
+
+Name: mitsubishi_arm_control
+Description: Description of mitsubishi_arm_control
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/yasmeen/MarcoStuff/catkin_ws/devel/lib 
+Requires: 

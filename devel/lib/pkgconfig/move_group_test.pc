@@ -1,0 +1,8 @@
+prefix=/home/yasmeen/MarcoStuff/catkin_ws/devel
+
+Name: move_group_test
+Description: Description of move_group_test
+Version: 0.0.0
+Cflags: -I/home/yasmeen/MarcoStuff/catkin_ws/src/lesson_move_group/include
+Libs: -L/home/yasmeen/MarcoStuff/catkin_ws/devel/lib 
+Requires: moveit_ros_planning_interface moveit_core roscpp

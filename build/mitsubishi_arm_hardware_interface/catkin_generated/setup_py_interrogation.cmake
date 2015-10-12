@@ -1,0 +1,6 @@
+set(mitsubishi_arm_hardware_interface_SETUP_PY_VERSION "0.0.0")
+set(mitsubishi_arm_hardware_interface_SETUP_PY_SCRIPTS "")
+set(mitsubishi_arm_hardware_interface_SETUP_PY_PACKAGES "mitsubishi_arm_controller")
+set(mitsubishi_arm_hardware_interface_SETUP_PY_PACKAGE_DIRS "scripts/mitsubishi_arm_controller")
+set(mitsubishi_arm_hardware_interface_SETUP_PY_MODULES "")
+set(mitsubishi_arm_hardware_interface_SETUP_PY_MODULE_DIRS "")

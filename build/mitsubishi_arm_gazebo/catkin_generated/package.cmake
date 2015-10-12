@@ -1,0 +1,7 @@
+set(_CATKIN_CURRENT_PACKAGE "mitsubishi_arm_gazebo")
+set(mitsubishi_arm_gazebo_MAINTAINER "kuri <kuri@todo.todo>")
+set(mitsubishi_arm_gazebo_DEPRECATED "")
+set(mitsubishi_arm_gazebo_VERSION "0.0.0")
+set(mitsubishi_arm_gazebo_BUILD_DEPENDS )
+set(mitsubishi_arm_gazebo_RUN_DEPENDS "mitsubishi_arm_description" "mitsubishi_arm_control" "gazebo_ros")
+set(mitsubishi_arm_gazebo_BUILDTOOL_DEPENDS "catkin")

@@ -1,0 +1,8 @@
+prefix=/home/yasmeen/MarcoStuff/catkin_ws/devel
+
+Name: fermi_blending_cell_support
+Description: Description of fermi_blending_cell_support
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/yasmeen/MarcoStuff/catkin_ws/devel/lib 
+Requires: 

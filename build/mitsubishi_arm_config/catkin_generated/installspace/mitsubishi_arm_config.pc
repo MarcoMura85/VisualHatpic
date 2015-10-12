@@ -1,0 +1,8 @@
+prefix=/home/yasmeen/MarcoStuff/catkin_ws/install
+
+Name: mitsubishi_arm_config
+Description: Description of mitsubishi_arm_config
+Version: 0.2.0
+Cflags: 
+Libs: -L/home/yasmeen/MarcoStuff/catkin_ws/install/lib 
+Requires: 

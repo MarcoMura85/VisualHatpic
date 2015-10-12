@@ -1,0 +1,7 @@
+set(_CATKIN_CURRENT_PACKAGE "mitsubishi_arm_control")
+set(mitsubishi_arm_control_MAINTAINER "kuri <kuri@todo.todo>")
+set(mitsubishi_arm_control_DEPRECATED "")
+set(mitsubishi_arm_control_VERSION "0.0.0")
+set(mitsubishi_arm_control_BUILD_DEPENDS "ros_control" "ros_controllers" "robot_mechanism_controllers")
+set(mitsubishi_arm_control_RUN_DEPENDS "ros_control" "ros_controllers" "robot_mechanism_controllers")
+set(mitsubishi_arm_control_BUILDTOOL_DEPENDS "catkin")

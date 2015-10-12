@@ -1,0 +1,8 @@
+prefix=/home/yasmeen/MarcoStuff/catkin_ws/devel
+
+Name: mitsubishi_arm_hardware_interface
+Description: Description of mitsubishi_arm_hardware_interface
+Version: 0.0.0
+Cflags: -I/home/yasmeen/MarcoStuff/catkin_ws/src/mitsubishi_arm_hardware_interface/include
+Libs: -L/home/yasmeen/MarcoStuff/catkin_ws/devel/lib -lmitsubishi_arm_hardware_interface
+Requires: roscpp controller_manager
