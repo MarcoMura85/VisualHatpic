@@ -1,13 +1,19 @@
 cmake_minimum_required(VERSION 2.8.3)
-project(move_group_test)
+project(lesson_move_group)
+
 
 ## Find catkin macros and libraries
 ## if COMPONENTS list like find_package(catkin REQUIRED COMPONENTS xyz)
 ## is used, also find other catkin packages
 find_package(catkin REQUIRED COMPONENTS
   moveit_ros_planning_interface
+  message_generation
   roscpp
 )
+
+find_package( PkgConfig REQUIRED )
+pkg_check_modules( ncurses++ REQUIRED ncurses++ )
+
 
 ## System dependencies are found with CMake's conventions
 # find_package(Boost REQUIRED COMPONENTS system)
@@ -48,6 +54,7 @@ find_package(catkin REQUIRED COMPONENTS
 #   Message1.msg
 #   Message2.msg
 # )
+add_message_files(FILES PathPosition.msg)
 
 ## Generate services in the 'srv' folder
 # add_service_files(
@@ -68,6 +75,7 @@ find_package(catkin REQUIRED COMPONENTS
 #   DEPENDENCIES
 #   std_msgs  # Or other packages containing msgs
 # )
+generate_messages(DEPENDENCIES std_msgs)
 
 ################################################
 ## Declare ROS dynamic reconfigure parameters ##
@@ -105,6 +113,7 @@ catkin_package(
    moveit_ros_planning_interface 
    moveit_core
    roscpp
+   message_runtime
 #  DEPENDS system_lib
 )
 
@@ -132,23 +141,47 @@ include_directories(include
 ## Declare a C++ executable
 # add_executable(lesson_move_group_node src/lesson_move_group_node.cpp)
 
-add_executable(move_group_1 src/move_group_1.cpp)
-add_executable(move_group_2 src/move_group_2.cpp)
-add_executable(move_group_3 src/move_group_3.cpp)
+add_executable(lesson_move_group_1 src/lesson_move_group_1.cpp)
+add_executable(lesson_move_group_2 src/lesson_move_group_2.cpp)
+add_executable(lesson_move_group_3 src/lesson_move_group_3.cpp)
+add_executable(moveTest src/moveTest.cpp)
+add_executable(simple_subscriber src/simple_subscriber.cpp)
+add_executable(simple_publisher src/simple_publisher.cpp)
 
-target_link_libraries(move_group_1 
+
+target_link_libraries(lesson_move_group_1 
   ${catkin_LIBRARIES}
 ) 
-target_link_libraries(move_group_2
+
+target_link_libraries(moveTest 
   ${catkin_LIBRARIES}
 ) 
-target_link_libraries(move_group_3
+target_link_libraries(lesson_move_group_2
   ${catkin_LIBRARIES}
 ) 
+target_link_libraries(lesson_move_group_3
+  ${catkin_LIBRARIES}
+) 
+
+target_link_libraries(simple_subscriber
+  ${catkin_LIBRARIES}
+)
+
+target_link_libraries(simple_publisher
+  ${catkin_LIBRARIES}
+  ncurses
+)
+
+ add_dependencies(simple_subscriber ${PROJECT_NAME}_generate_messages_cpp)
+ add_dependencies(simple_publisher ${PROJECT_NAME}_generate_messages_cpp)
+
+
+#target_link_libraries(simple_publisher ${catkin_LIBRARIES} ncurses)
+#add_dependencies(simple_publisher ${catkin_EXPORTED_TARGETS} simple_publisher)
 
 ## Add cmake target dependencies of the executable
 ## same as for the library above
- add_dependencies(move_group_1 ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+# add_dependencies(lesson_move_group_1 ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
 
 ## Specify libraries to link a library or executable target against
 # target_link_libraries(lesson_move_group_node
@@ -170,7 +203,7 @@ target_link_libraries(move_group_3
 # )
 
 ## Mark executables and/or libraries for installation
- install(TARGETS move_group_1 move_group_1
+ install(TARGETS lesson_move_group_1 lesson_move_group_1
    ARCHIVE DESTINATION ${CATKIN_PACKAGE_LIB_DESTINATION}
    LIBRARY DESTINATION ${CATKIN_PACKAGE_LIB_DESTINATION}
    RUNTIME DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}

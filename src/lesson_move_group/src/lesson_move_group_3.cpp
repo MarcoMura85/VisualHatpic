@@ -2,7 +2,6 @@
 #include <moveit/move_group_interface/move_group.h>
 #include <moveit/robot_state/conversions.h>
 #include <moveit/trajectory_processing/iterative_time_parameterization.h>
-//#include <moveit_cartesian_plan_plugin/generate_cartesian_path.h>
 #include <moveit/planning_interface/planning_interface.h>
 #include <moveit/planning_scene/planning_scene.h>
 #include <moveit/kinematic_constraints/utils.h>
@@ -10,7 +9,7 @@
 #include <moveit_msgs/PlanningScene.h>
 #include <tf/tf.h>
 #include <tf/transform_datatypes.h>
-//#include <moveit/robot_model/robot_model.h>
+
 int main(int argc, char **argv)
 {
   ros::init(argc, argv, "lesson_move_group");
