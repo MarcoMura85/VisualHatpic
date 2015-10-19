@@ -55,6 +55,7 @@ pkg_check_modules( ncurses++ REQUIRED ncurses++ )
 #   Message2.msg
 # )
 add_message_files(FILES PathPosition.msg)
+add_message_files(FILES KeyboardInput.msg)
 
 ## Generate services in the 'srv' folder
 # add_service_files(
@@ -145,7 +146,7 @@ add_executable(lesson_move_group_1 src/lesson_move_group_1.cpp)
 add_executable(lesson_move_group_2 src/lesson_move_group_2.cpp)
 add_executable(lesson_move_group_3 src/lesson_move_group_3.cpp)
 add_executable(moveTest src/moveTest.cpp)
-add_executable(simple_subscriber src/simple_subscriber.cpp)
+add_executable(robotteleop_keyboard src/robotteleop_keyboard.cpp)
 add_executable(simple_publisher src/simple_publisher.cpp)
 
 
@@ -163,7 +164,7 @@ target_link_libraries(lesson_move_group_3
   ${catkin_LIBRARIES}
 ) 
 
-target_link_libraries(simple_subscriber
+target_link_libraries(robotteleop_keyboard
   ${catkin_LIBRARIES}
 )
 
@@ -172,7 +173,7 @@ target_link_libraries(simple_publisher
   ncurses
 )
 
- add_dependencies(simple_subscriber ${PROJECT_NAME}_generate_messages_cpp)
+ add_dependencies(robotteleop_keyboard ${PROJECT_NAME}_generate_messages_cpp)
  add_dependencies(simple_publisher ${PROJECT_NAME}_generate_messages_cpp)
 
 
